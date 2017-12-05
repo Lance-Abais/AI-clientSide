@@ -1,0 +1,52 @@
+<RelativeLayout
+    android:id="@+id/arrangement"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        tools:context="edu.ateneo.cs172.pathfinderclient.NavigationActivity" />
+
+    <CheckBox
+        android:id="@+id/chk_dangerous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_navigate"
+        android:text="Dangerous?"
+        android:clickable="false"
+        android:background="@android:color/white"
+        android:layout_marginLeft="15sp"
+        android:layout_marginBottom="10sp"
+        />
+
+    <Button
+        android:id="@+id/btn_save_danger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/chk_dangerous"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15sp"
+        android:text="Save Danger"
+        />
+
+    <Button
+        android:id="@+id/btn_navigate"
+        android:layout_width="match_parent"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="Navigate" />
+
+
+</RelativeLayout>
+
+
